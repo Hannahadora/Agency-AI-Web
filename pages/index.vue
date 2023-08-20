@@ -1,6 +1,5 @@
 <template>
   <div>
-    <BaseMainHeader/>
     <index-hero />
     <frame-50 />
     <heyjv />
@@ -16,7 +15,7 @@
 
 <script setup lang="ts">
 definePageMeta({
-  layout: false,
+  // layout: false,
 });
 </script>
 
