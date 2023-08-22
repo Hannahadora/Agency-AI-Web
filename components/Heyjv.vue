@@ -1,7 +1,6 @@
 <template>
   <div class="wrapper relative">
-    <img class="w-full hey_jv_pos1 absolute top-0 left-0" src="/icons/Bubbles.svg" alt="">
-    <img class="w-full hey_jv_pos1 absolute top-0 right-0" src="/icons/Hey_ellipse.svg" alt="">
+  
     <div class="d-container hey_jv_pos2 sm:pt-[95px] pt-[30px] sm:pb-[115px] pb-[50px]">
         <div class="sm:max-w-[300px] max-w-[200px] mx-auto text-center flex items-center justify-center">
             <p class="md:text-[48px] text-[30px] font-[700] text-[#fff] mr-[-50px]">Hey</p>
@@ -43,6 +42,8 @@
             </div>
         </article>
     </div>
+    <img class="w-full hey_jv_pos1 absolute top-0 left-0" src="/icons/Bubbles.svg" alt="">
+    <img class="w-full hey_jv_pos1 absolute top-0 right-0" src="/icons/Hey_ellipse.svg" alt="">
   </div>
 </template>
 
@@ -60,10 +61,11 @@
 <style scoped>
 .wrapper {
   background: linear-gradient(165deg, #380251 0%, #331042 100%); color:#fff;
+  z-index: 2 !important;
 }
 
 .hey_jv_pos1 {
-    z-index: 1 !important;
+    z-index: -1 !important;
 }
 .hey_jv_pos2 {
     z-index: 10 !important;

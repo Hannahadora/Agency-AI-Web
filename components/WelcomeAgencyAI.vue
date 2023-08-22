@@ -1,20 +1,9 @@
 <template>
   <div class="relative">
-    <img
-      class="w-full absolute top-0 left-0"
-      src="/icons/purplebg.svg"
-      alt=""
-    />
-    <img class="w-full absolute top-0 right-0" src="/icons/bluebg.svg" alt="" />
-    <img
-      class="w-full absolute top-10 right-0"
-      src="/icons/whitebg.svg"
-      alt=""
-    />
 
     <div class="flex items-center justify-center">
       <img
-        class="lg:-mt-16 sm:-mt-12 -mt-6 lg:w-[100px] sm:w-[80px] w-[50px]"
+        class="lg:-mt-16 sm:-mt-12 -mt-6 lg:w-[100px] sm:w-[80px] w-[50px] z-50"
         src="/icons/curlybg_one.svg"
         alt=""
       />
@@ -126,9 +115,24 @@
               </div> -->
       </div>
     </div>
+    <img
+      class="w-full absolute indexer top-0 left-0"
+      src="/icons/purplebg.svg"
+      alt=""
+    />
+    <img class="w-full absolute indexer top-0 right-0" src="/icons/bluebg.svg" alt="" />
+    <img
+      class="w-full absolute indexer top-10 right-0"
+      src="/icons/whitebg.svg"
+      alt=""
+    />
   </div>
 </template>
 
 <script setup></script>
 
-<style scoped></style>
+<style scoped>
+  .indexer {
+    z-index: -1 !important;
+  }
+</style>
