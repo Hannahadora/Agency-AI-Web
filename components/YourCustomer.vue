@@ -7,37 +7,40 @@
         <!-- <div class="flex items-center justify-center">
             <img class="lg:-mt-16 sm:-mt-12 -mt-6 lg:w-[100px] sm:w-[80px] w-[50px]" src="/icons/curlybg_one.svg" alt="">
         </div> -->
+   
 
-      <div class="d-container sm:pt-[95px] pt-[30px] sm:pb-[115px] pb-[50px]">
-          <div class="flex sm:flex-row flex-col sm:space-y-0 space-y-6 sm:space-x-[100px] lg:space-x-[40x] space-x-0 koro">
-              <div class="lg:max-w-[400px] sm:max-w-[300px] sm:max-w-[90%] text-white">
-                  <h1 class="text-[#3B57F4] sm:text-[32px] text-[20px] font-bold pb-3 text-white">If Your Customers are not using AI, Well, They&apos;re Not Using AI</h1>
-                  <p class="sm:text-[16px] text-[14px] pb-3">Agencies & freelancers who are not using AI are going to lose business to the ones that are.</p>
-                  <p class="sm:text-[16px] text-[14px] pb-3">AI is fast, quick, & produces better results, which is exactly what businesses want.</p>
-                  <p class="sm:text-[16px] text-[14px] pb-3">As we move towards a more digitized world, businesses are going to demand content & assets generated at the click of a button.</p>
-                  <p class="sm:text-[16px] text-[14px] pb-3">And those who can't provide it will find it hard to keep up with the competition.</p>
-              </div>
-              <div class="sm:max-w-[420px] max-w-[100%] w-full relative">
-                <img class="w-full" src="/icons/customer_illu1.svg" alt="illustration">
-              </div>
-          </div>
+      <div class="sm:pt-[95px] pt-[30px] sm:pb-[115px] pb-[50px]">
+        <div class="ml-[215px] flex sm:flex-row flex-col justify-end sm:space-y-0 space-y-6 sm:space-x-[100px] lg:space-x-[40px] space-x-0 koro">
+            <div class="lg:max-w-[495px] sm:max-w-[300px] sm:max-w-[90%] text-white">
+                <h1 class="text-[#3B57F4] lg:text-[48px] sm:text-[32px] text-[20px] font-bold pb-[40px] text-white">If Your Customers are not using AI, Well, They&apos;re Not Using AI</h1>
+                <p class="lg:text-[20px] sm:text-[16px] text-[14px] pb-3">Agencies & freelancers who are not using AI are going to lose business to the ones that are.</p>
+                <p class="lg:text-[20px] sm:text-[16px] text-[14px] pb-3">AI is fast, quick, & produces better results, which is exactly what businesses want.</p>
+                <p class="lg:text-[20px] sm:text-[16px] text-[14px] pb-3">As we move towards a more digitized world, businesses are going to demand content & assets generated at the click of a button.</p>
+                <p class="lg:text-[20px] sm:text-[16px] text-[14px] pb-3">And those who can't provide it will find it hard to keep up with the competition.</p>
+            </div>
+            <div class="sm:max-w-[700px] max-w-[100%] w-full relative">
+              <img class="w-full" src="/icons/customer_illu1.svg" alt="illustration">
+            </div>
+        </div>
 
-  
-          <div class="text-wrapper lg:p-[80px] sm:p-[40px] p-[20px] sm:mt-[140px] mt-[80px]">
-              <h1 class="sm:pt-[40px] pt-[0px] lg:text-[38px] sm:text-[28px] text-[18px] font-bold text-center">...But Starting An Agency That Uses <br class="sm:block hidden"> 
+        <div class="d-container">
+          <div class="text-wrapper lg:p-[80px] sm:p-[40px] p-[20px] sm:mt-[140px] mt-[80px] lg:mx-[100px] md:mx-[50px]">
+              <h1 class="sm:pt-[40px] pt-[0px] lg:text-[40px] sm:text-[28px] text-[18px] font-[700] text-center">...But Starting An Agency That Uses <br class="sm:block hidden"> 
                 <span class="bg-gradient-to-r from-[#AB3ADD] to-[#3B57F4] text-transparent bg-clip-text">Artificial Intelligence</span> 
                 Requires A Lot Of <br class="sm:block hidden"> Time, Money & Other Resources…
               </h1>
-              <h3 class="text-center lg:pb-[120px] sm:pb-[80px] pb-[40px]  pt-[30px]">(Until Now YOU Needed… )</h3>
+              <h3 class="text-center md:text-[32px] text-[24px] text-[#7D7979] font-[700] lg:pb-[120px] sm:pb-[80px] pb-[40px]  pt-[32px]">(Until Now YOU Needed… )</h3>
 
               <div class="text-wrapper grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:gap-x-[60px] gap-x-[10px] sm:gap-y-[80px] gap-y-[40px]">
                 <div v-for="(text, i) in textContent" :key="i" class="mx-w-[300px] w-full text-center">
                     <img class="sm:w-[100px] w-[50px] mx-auto" :src=text.icon alt="icon">
-                    <h1 class="sm:text-[20px] text-[16px] sm:pt-[30px] pt-[10px] pb-2 font-bold">{{ text.header }}</h1>
+                    <h1 class="sm:text-[20px] text-[16px] sm:pt-[30px] pt-[10px] pb-2 font-[700]">{{ text.header }}</h1>
                     <p class="sm:text-[16px] text-[14px]">{{ text.desc }}</p>
-                    <p class="sm:text-[16px] text-[14px] mt-[20px]">{{ text.cost }}</p>
+                    <p v-if="text.cost" class="sm:text-[14px] text-[12px] font-[700] leading-[18px] mt-[20px]">Cost:</p>
+                    <p class="sm:text-[14px] text-[12px] font-[700] leading-[18px]">{{ text.cost }}</p>
                 </div>
             </div>
+         </div>
          </div>
       </div>
     </div>
@@ -60,8 +63,13 @@
   
   <style scoped>
 .wrapper {
-  background: linear-gradient(144deg, #AB3ADD 50%, #3B57F4 50%, #FAF0FF 50%);
-  background-color: #FAF0FF;
+  background: url('/icons/your_cus_section_bg.svg');
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* background: linear-gradient(144deg, #AB3ADD 50%, #3B57F4 50%, #FAF0FF 50%);
+  background-color: #FAF0FF; */
 }
   .text-wrapper {
     border-radius: 24px;
