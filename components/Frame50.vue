@@ -6,18 +6,18 @@
         <div
           class="w-full flex md:flex-row flex-col items-center justify-center"
         >
-          <img
-            class="lg:mr-[60px]"
-            src="/images/high-conveting-text.png"
-            alt="text image"
-          />
+          <div class="text-center md:mr-[55px]">
+            <p class="font-[600] text-[#FFC236] text-[33px]">High Converting</p>
+            <p class="text-[69px] text-[#fff] font-[800]">$445</p>
+            <p class="font-[600] text-[#FFC236] text-[30px]">Funnel Potential</p>
+          </div>
           <div
-            class="md:my-0 md:my-[50px] my-[30px] bg-[#FF6FED] md:p-[14px] p-[10px] rounded-[100%] text-[#8D00C9] md:text-[28px] text-[20px] font-[500] flex items-center justify-center"
+            class="md:my-0 md:my-[50px] my-[30px] bg-[#FF6FED] md:p-[14px] p-[10px] w-[50px] h-[50px] rounded-[100%] text-[#8D00C9] md:text-[28px] text-[20px] font-[500] flex items-center justify-center"
           >
             &
           </div>
           <img
-            class="lg:ml-[60px]"
+            class="lg:ml-[55px]"
             src="/images/cahp-t.png"
             alt="cash prize text"
           />
@@ -34,8 +34,11 @@
 <style scoped>
 .a-box {
   border-radius: 24px;
-  background: #8a00c7;
+  background: url('/icons/purple_bg-striped.svg');
   box-shadow: 8px 8px 64px 0px rgba(171, 58, 221, 0.2);
   height: auto;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 </style>
