@@ -1,8 +1,8 @@
 <template>
   <div class="wrapper relative">
-    <div>
+    <!-- <div>
         <img class="w-full" src="/images/page_one.png" alt="page_frame">
-    </div>
+    </div> -->
     <div>
         <img class="w-full" src="/images/page_two.png" alt="page_frame">
     </div>
