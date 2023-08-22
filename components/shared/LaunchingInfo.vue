@@ -17,7 +17,9 @@
                 >24th August 2023</span
               >
             </p>
-            <img class="md:mt-[0] mt-[20px]" src="/images/e11am-etny.png" alt="launch-time" />
+            <div class="md:px-[26px] px-[20px] md:py-[19px] py-[14px] rounded-[19px] bg-[#E8B5FF] md:mt-[0] mt-[20px]">
+              <p class="font-[600] md:text-[30px] text-[24px] text-[#000]">@ 11AM ET/NY</p>
+            </div>
           </div>
         </div>
       </article>

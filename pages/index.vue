@@ -5,6 +5,7 @@
     <heyjv />
     <WelcomeAgencyAI />
     <YourCustomer />
+    <WhatIfSection/>
     <FrameBoundGroupOne />
     <the-funnel />
     <huge-affiliates />
