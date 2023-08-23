@@ -42,5 +42,8 @@ input:focus {
 
 
 @media screen and (max-width: 767px) {
-    .d-container {  padding-left: 16px; padding-right: 16px ;}
+    .d-container {
+        padding-left: 16px ;
+        padding-right: 16px ;
+    }
 }

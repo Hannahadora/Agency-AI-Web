@@ -27,7 +27,7 @@
           src="/icons/pre_cloud.svg"
           alt=""
         />
-        <h1 class="sm:text-[32px] text-[24px] font-bold italic text-center">
+        <h1 class="sm:text-[32px] text-[24px] font-bold italic text-center text-[#3B57F4]">
           The NEW Way To Build & Run <br />
           A Profitable Agency in 2023 using AI
         </h1>

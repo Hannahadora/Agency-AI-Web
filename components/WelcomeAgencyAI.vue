@@ -12,7 +12,7 @@
     <div class="d-container sm:pt-[95px] pt-[30px] sm:pb-[115px] pb-[50px]">
       <div class="relative sm:pt-[60px] pt-[20px]">
         <img
-          class="w-[80px] lg:block hidden absolute top-0 right-0"
+          class="w-[80px] lg:block hidden absolute top-0 -right-20"
           src="/icons/crown.svg"
           alt=""
         />
