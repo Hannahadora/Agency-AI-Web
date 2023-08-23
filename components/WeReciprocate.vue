@@ -18,7 +18,7 @@
             </div>
 
             <!-- Part 2 -->
-            <div class="grid grid-cols-3">
+            <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
                 <div class="flex flex-col items-center justify-between">
                     <div class="h-[100px] w-[100px] bg-[#3B57F4] rounded-full flex items-center justify-center"><img
                             src="/icons/gold_medal.svg" alt=""></div>
