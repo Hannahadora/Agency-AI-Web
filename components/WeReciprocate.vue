@@ -1,5 +1,5 @@
 <template>
-    <section class="relative wrapper lg:py-[100px] sm:py-[50px] py-[30px]">
+    <section class="relative wrapper lg:py-[130px] sm:py-[70px] py-[40px]">
         <div class="d-container">
             <h1
                 class="lg:text-[60px] sm:text-[36px] text-[28px] font-bold sm:pt-[50px] pt-[20px] text-center bg-gradient-to-b from-[#3B57F4] to-[#AB3ADD] text-transparent bg-clip-text">
@@ -18,29 +18,48 @@
             </div>
 
             <!-- Part 2 -->
-            <div class="grid lg:grid-cols-3 sm:grid-cols-2 grid-cols-1">
-                <div class="flex flex-col items-center justify-between">
-                    <div class="h-[100px] w-[100px] bg-[#3B57F4] rounded-full flex items-center justify-center"><img
-                            src="/icons/gold_medal.svg" alt=""></div>
-                    <div class="w-[10px] bg-black h-auto">.</div>
-                    <div><img src="/icons/trophy.svg" alt=""></div>
+            <div class="grid gap-[20px] lg:grid-cols-3 sm:grid-cols-2 grid-cols-1 sm:ml-[150px] ml-[120px]">
+                <div class="flex">
+                    <div class="w-[10px] bg-black h-[100%] rounded-[20px] -mr-[102px]">.</div>
+                    <div class="flex flex-col items-center justify-between">
+                        <div class="h-[100px] w-[100px] bg-[#3B57F4] rounded-full flex items-center justify-center">
+                            <img src="/icons/gold_medal.svg" alt="">
+                        </div>
+                       <img src="/icons/trophy.svg" alt="">
+                    </div>
                 </div>
 
                 <div class="flex">
-                    <div class="w-[10px] bg-black h-[100%] rounded-[20px] -mr-[55px]">.</div>
+                    <div class="w-[10px] bg-black h-[100%] rounded-[20px] -mr-[62px]">.</div>
                     <div class="flex flex-col items-center justify-between">
-                        <div v-for="(item, index) in ladderDataOne" :key="index" class="border border-red-500 flex items-center space-x-5 my-[20px]">
+                        <div v-for="(item, index) in ladderDataOne" :key="index"
+                            class="flex items-center space-x-5 my-[20px]">
                             <img class="w-[100px] h-[100px] bg-black rounded-full p-2" :src="item.icon" alt="">
-                            <div class="border border-green-500">
-                                <p class="">{{ item.title}}</p>
-                                <h1 class="sm:text-[28px] text-[18px] text-[#333] font-bold">{{ item.amount }}</h1>
+                            <div>
+                                <p class="">{{ item.title }}</p>
+                                <h1 class="sm:text-[26px] text-[18px] text-[#333] font-bold">{{ item.amount }}</h1>
                             </div>
-                            
+
                         </div>
                     </div>
                 </div>
 
                 <div class="flex">
+                    <div class="w-[10px] bg-black h-[100%] rounded-[20px] -mr-[62px]">.</div>
+                    <div class="flex flex-col items-center justify-between">
+                        <div v-for="(item, index) in ladderDataTwo" :key="index"
+                            class="flex items-center space-x-5 my-[20px]">
+                            <img class="w-[100px] h-[100px] bg-black rounded-full p-2" :src="item.icon" alt="">
+                            <div>
+                                <p class="">{{ item.title }}</p>
+                                <h1 class="sm:text-[26px] text-[18px] text-[#333] font-bold">{{ item.amount }}</h1>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- <div class="flex border-2 border-red-500">
                     <div class="w-[10px] bg-black h-[100%] rounded-[20px] -mr-[55px]">.</div>
                     <div class="flex flex-col items-center justify-between">
                         <div v-for="(item, index) in ladderDataTwo" :key="index" class="border border-red-500 flex items-center space-x-5 my-[20px]">
@@ -52,7 +71,7 @@
                             
                         </div>
                     </div>
-                </div>
+                </div> -->
             </div>
 
         </div>
