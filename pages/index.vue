@@ -13,7 +13,7 @@
     <TopFive />
     <ProductConverts />
     <WeReciprocate />
-    <FrameBoundGroupOne />
+    <ContestSection />
     <the-funnel />
     <huge-affiliates />
     <need-anything-sect />

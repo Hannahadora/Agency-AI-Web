@@ -13,6 +13,8 @@
                 </div>
                 <slot></slot>
             </div>
+            <div class="bg-[#3B57F412] min-w-[609px] mx-auto min-h-[30px] rounded-b-[10px]"></div>
+            <div class="z-2 bg-[#E9ECFF] relative  max-w-[573px] mx-auto min-h-[28px] rounded-[10px]"></div>
         </div>
     </div>
   </main>

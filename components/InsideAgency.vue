@@ -1,7 +1,7 @@
 <template>
     <section class="relative wrapper lg:py-[160px] sm:py-[110px] py-[40px]">
         <div class="d-container">
-            <h1 class="text-center lg:text-[60px] text-[36px] font-bold pb-[50px] text-white">
+            <h1 class="text-center lg:text-[60px] text-[36px] font-[700] pb-[50px] text-white">
                 Here's What's Inside <br> AgencyAI
             </h1>
 
@@ -9,7 +9,7 @@
                 <div class="text-center mx-auto">
                     <img class="mx-auto" src="/icons/inside_feature_one.svg" alt="">
                     <h1
-                        class="lg:text-[48px] sm:text-[36px] text-[24px] bg-gradient-to-r from-[#AB3ADD] to-[#3B57F4] text-transparent bg-clip-text pt-[43px] font-bold">
+                        class="lg:text-[48px] sm:text-[36px] text-[24px] bg-gradient-to-r from-[#AB3ADD] to-[#3B57F4] text-transparent bg-clip-text pt-[43px] font-[700]">
                         DFY AI Agency Setup</h1>
                     <h2 class="sm:text-[30px] text-[18px] pt-[10px]">With 1 Click AI Installation Wizard</h2>
                 </div>
@@ -17,7 +17,7 @@
                 <div
                     class="flex sm:flex-row flex-col items-start justify-center sm:space-x-10 sm:space-y-0 space-y-6 sm:my-[80px]  my-[30px]">
                     <div class="lg:max-w-[430px] sm:max-w-[300px] sm:max-w-[90%]">
-                        <h1 class="lg:text-[30px] sm:text-[22px] text-[18px] font-bold pb-[16px]">
+                        <h1 class="lg:text-[30px] sm:text-[22px] text-[18px] font-[700] pb-[16px]">
                             SETUP A PROFESSIONAL PORTFOLIO WEBSITE + MARKETING RESOURCES TO SELL YOUR AI SERVICES WITH WITH
                             AI IN A FEW CLICKS
                         </h1>
@@ -34,7 +34,7 @@
                             You also get professionally developed marketing resources like Commercial Videos, Proposals, and
                             a lot more.
                         </p>
-                        <p class="lg:text-[20px] sm:text-[16px] text-[14px] pb-3 font-bold">
+                        <p class="lg:text-[20px] sm:text-[16px] text-[14px] pb-3 font-[700]">
                             [Market Price: $997]
                         </p>
                     </div>
@@ -45,7 +45,7 @@
 
 
                 <div class="sm:py-0 py-[20px]">
-                    <h1 class="lg:text-[30px] sm:text-[26px] text-[18px] font-bold text-center"> AI Agency Installation
+                    <h1 class="lg:text-[30px] sm:text-[26px] text-[18px] font-[700] text-center"> AI Agency Installation
                         Wizard.</h1>
                     <div class="max-w-[620px] mx-auto pt-[25px] pb-[40px]">
                         <p class="text-center sm:text-[16px] text-[14px]">We have the Entire AI Agency Setup as Easy and
@@ -64,7 +64,7 @@
                     <div class="text-center mx-auto">
                         <img class="mx-auto" src="/icons/inside_feature_two.svg" alt="">
                         <h1
-                            class="lg:text-[48px] sm:text-[36px] text-[24px] bg-gradient-to-r from-[#AB3ADD] to-[#3B57F4] text-transparent bg-clip-text pt-[43px] font-bold">
+                            class="lg:text-[48px] sm:text-[36px] text-[24px] bg-gradient-to-r from-[#AB3ADD] to-[#3B57F4] text-transparent bg-clip-text pt-[43px] font-[700]">
                             40+ AI Service Agents</h1>
                         <h2 class="sm:text-[30px] text-[18px] pt-[10px]">With 4000+ dfy Prompts Triggers</h2>
                     </div>
@@ -72,7 +72,7 @@
                     <div
                         class="flex sm:flex-row-reverse flex-col-reverse items-start justify-center sm:space-x-10 sm:space-y-0 space-y-6 sm:my-[80px]  my-[30px]">
                         <div class="lg:max-w-[430px] sm:max-w-[300px] sm:max-w-[90%] sm:ml-[30px]">
-                            <h1 class="lg:text-[30px] sm:text-[22px] text-[18px] font-bold pb-[16px]">
+                            <h1 class="lg:text-[30px] sm:text-[22px] text-[18px] font-[700] pb-[16px]">
                                 LET AI SERVICE AGENTS AUTO DELIVER THE SERVICES IN MINUTES
                             </h1>
                             <p class="lg:text-[20px] sm:text-[16px] text-[14px] pb-3">
@@ -100,10 +100,10 @@
                 <!-- break -->
                 <div class="flex flex-wrap gap-y-10 sm:overflow-x-auto overflow-x-hidden pt-[40px] pb-[60px]">
                     <div v-for="(item, index) in cardItems" :key="index"
-                        :class="['card', 'mx-auto', '-ml-[30px]', 'bg-white', { 'expanded-card': item.expanded }]">
-                        <img class="sm:h-[100px] h-[60px] sm:w-[100px] h-[60px] rounded-full border-2 cursor-pointer"
+                        :class="['card', 'mx-auto', '-ml-[30px]', 'bg-white', 'h-[73px] w-[73px] rounded-[50%]', { 'expanded-card': item.expanded }]">
+                        <img class="sm:h-[73px] h-[50px] sm:w-[73px] h-[50px] rounded-full border-2 cursor-pointer"
                             :src="item.icon" alt="" @click="toggleCardExpansion(index)" />
-                        <h4 class="title font-medium">{{ item.title }}</h4>
+                        <h4 class="title font-medium overflow-ellipsis">{{ item.title }}</h4>
                     </div>
                 </div>
 
@@ -112,7 +112,7 @@
                 <div
                     class="flex sm:flex-row flex-col items-start justify-center sm:space-x-10 sm:space-y-0 space-y-6 sm:my-[80px]  my-[30px]">
                     <div class="lg:max-w-[430px] sm:max-w-[300px] sm:max-w-[90%]">
-                        <h1 class="lg:text-[30px] sm:text-[22px] text-[18px] font-bold pb-[16px]">
+                        <h1 class="lg:text-[30px] sm:text-[22px] text-[18px] font-[700] pb-[16px]">
                             Loaded With 4000+ Dfy Prompts Triggers
                         </h1>
                         <p class="lg:text-[20px] sm:text-[16px] text-[14px] pb-3">
@@ -138,14 +138,14 @@
                     <div class="text-center mx-auto">
                         <img class="mx-auto" src="/icons/inside_feature_three.svg" alt="">
                         <h1
-                            class="lg:text-[48px] sm:text-[36px] text-[24px] bg-gradient-to-r from-[#AB3ADD] to-[#3B57F4] text-transparent bg-clip-text pt-[43px] font-bold">
+                            class="lg:text-[48px] sm:text-[36px] text-[24px] bg-gradient-to-r from-[#AB3ADD] to-[#3B57F4] text-transparent bg-clip-text pt-[43px] font-[700]">
                             AI Gig Finder</h1>
                     </div>
 
                     <div
                         class="flex sm:flex-row-reverse flex-col-reverse items-start justify-center sm:space-x-10 sm:space-y-0 space-y-6 sm:my-[80px]  my-[30px]">
                         <div class="lg:max-w-[430px] sm:max-w-[300px] sm:max-w-[90%]">
-                            <h1 class="lg:text-[30px] sm:text-[22px] text-[18px] font-bold pb-[16px]">
+                            <h1 class="lg:text-[30px] sm:text-[22px] text-[18px] font-[700] pb-[16px]">
                                 BUILT-IN GIG FINDER FILTER SERVICES THAT CAN BE RENDERED USING AI
                             </h1>
                             <p class="lg:text-[20px] sm:text-[16px] text-[14px] pb-3">
@@ -171,18 +171,18 @@
                     class="flex sm:flex-row sm:space-y-0 space-y-10 flex-col item-center justify-between sm:pb-[200px] pb-[80px]">
                     <div class="text-center sm:w-[250px] w-full">
                         <img class="mx-auto" src="/icons/inside_funnel.svg" alt="">
-                        <h1 class="font-bold sm:text-[20px] text-[16px] pt-[20px] pb-[10px]">Filter Gigs from Accros the Web
+                        <h1 class="font-[700] sm:text-[20px] text-[16px] pt-[20px] pb-[10px]">Filter Gigs from Accros the Web
                         </h1>
                         <p class="sm:text-[16px] text-[14px]">With the Job Finder, Users can find Jobs on Demand.</p>
                     </div>
                     <div class="text-center sm:w-[250px] w-full">
                         <img class="mx-auto" src="/icons/inside_suitcase.svg" alt="">
-                        <h1 class="font-bold text-[20px] pt-[20px] pb-[10px]">Jobs On Demand</h1>
+                        <h1 class="font-[700] text-[20px] pt-[20px] pb-[10px]">Jobs On Demand</h1>
                         <p class="sm:text-[16px] text-[14px]">With the Job Finder, Users can find Jobs on Demand.</p>
                     </div>
                     <div class="text-center sm:w-[250px] w-full">
                         <img class="mx-auto" src="/icons/inside_briefcase.svg" alt="">
-                        <h1 class="font-bold text-[20px] pt-[20px] pb-[10px]">Predictable Earnings</h1>
+                        <h1 class="font-[700] text-[20px] pt-[20px] pb-[10px]">Predictable Earnings</h1>
                         <p class="sm:text-[16px] text-[14px]">The AI Job Finder offers users predictable revenue.</p>
                     </div>
 
@@ -194,7 +194,7 @@
                     <div class="text-center mx-auto">
                         <img class="mx-auto" src="/icons/inside_feature_three.svg" alt="">
                         <h1
-                            class="lg:text-[48px] sm:text-[36px] text-[24px] bg-gradient-to-r from-[#AB3ADD] to-[#3B57F4] text-transparent bg-clip-text pt-[43px] font-bold">
+                            class="lg:text-[48px] sm:text-[36px] text-[24px] bg-gradient-to-r from-[#AB3ADD] to-[#3B57F4] text-transparent bg-clip-text pt-[43px] font-[700]">
                             Email Follow-Up Engine</h1>
                         <h2 class="sm:text-[30px] text-[18px] pt-[10px]">(With Done-For-You Cold Email Swipes)</h2>
                     </div>
@@ -202,7 +202,7 @@
                     <div
                         class="flex sm:flex-row flex-col items-start justify-center sm:space-x-10 sm:space-y-0 space-y-6 sm:my-[80px]  my-[30px]">
                         <div class="lg:max-w-[430px] sm:max-w-[300px] sm:max-w-[90%]">
-                            <h1 class="lg:text-[30px] sm:text-[22px] text-[18px] font-bold pb-[16px]">
+                            <h1 class="lg:text-[30px] sm:text-[22px] text-[18px] font-[700] pb-[16px]">
                                 GENERATE LEADS, NURTURE EXISTING CUSTOMERS, & INCREASE SALES
                             </h1>
                             <p class="lg:text-[20px] sm:text-[16px] text-[14px] pb-3">
@@ -233,14 +233,14 @@
                     <div class="text-center mx-auto">
                         <img class="mx-auto" src="/icons/inside_feature_three.svg" alt="">
                         <h1
-                            class="lg:text-[48px] sm:text-[36px] text-[24px] bg-gradient-to-r from-[#AB3ADD] to-[#3B57F4] text-transparent bg-clip-text pt-[43px] font-bold">
+                            class="lg:text-[48px] sm:text-[36px] text-[24px] bg-gradient-to-r from-[#AB3ADD] to-[#3B57F4] text-transparent bg-clip-text pt-[43px] font-[700]">
                             Client & Workspaces</h1>
                     </div>
 
                     <div
                         class="flex sm:flex-row-reverse flex-col-reverse items-start justify-center sm:space-x-10 sm:space-y-0 space-y-6 sm:my-[80px]  my-[30px]">
                         <div class="lg:max-w-[430px] sm:max-w-[300px] sm:max-w-[90%]">
-                            <h1 class="lg:text-[30px] sm:text-[22px] text-[18px] font-bold pb-[16px]">
+                            <h1 class="lg:text-[30px] sm:text-[22px] text-[18px] font-[700] pb-[16px]">
                                 MULTI-USER ACCESS FOR CLIENTS AND TEAM MEMBERS
                             </h1>
                             <p class="lg:text-[20px] sm:text-[16px] text-[14px] pb-3">
@@ -281,14 +281,14 @@
                     <div class="text-center mx-auto">
                         <img class="mx-auto" src="/icons/inside_feature_three.svg" alt="">
                         <h1
-                            class="lg:text-[48px] sm:text-[36px] text-[24px] bg-gradient-to-r from-[#AB3ADD] to-[#3B57F4] text-transparent bg-clip-text pt-[43px] font-bold">
+                            class="lg:text-[48px] sm:text-[36px] text-[24px] bg-gradient-to-r from-[#AB3ADD] to-[#3B57F4] text-transparent bg-clip-text pt-[43px] font-[700]">
                             AI Agency Manager</h1>
                     </div>
 
                     <div
                         class="flex sm:flex-row flex-col items-start justify-center sm:space-x-10 sm:space-y-0 space-y-6 sm:my-[80px]  my-[30px]">
                         <div class="lg:max-w-[430px] sm:max-w-[300px] sm:max-w-[90%]">
-                            <h1 class="lg:text-[30px] sm:text-[22px] text-[18px] font-bold pb-[16px]">
+                            <h1 class="lg:text-[30px] sm:text-[22px] text-[18px] font-[700] pb-[16px]">
                                 MANAGE SERVICE DELIVERY TO CLIENTS & STREAMLINE OPERATIONS AS YOU SCALE
                             </h1>
                             <p class="lg:text-[20px] sm:text-[16px] text-[14px] pb-3">
@@ -315,7 +315,7 @@
                         <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101" fill="none">
                             <rect x="0.756836" y="0.788574" width="100" height="100" fill="#FAF0FF" />
                         </svg>
-                        <h1 class="font-bold sm:text-[20px] text-[16px] pt-[20px] pb-[10px]">AI Agency Consultant</h1>
+                        <h1 class="font-[700] sm:text-[20px] text-[16px] pt-[20px] pb-[10px]">AI Agency Consultant</h1>
                         <p class="sm:text-[16px] text-[14px]">Who knows about AI tools & platforms… and can help you set up an AI Agency.</p>
                     </div>
 
@@ -323,7 +323,7 @@
                         <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101" fill="none">
                             <rect x="0.756836" y="0.788574" width="100" height="100" fill="#FAF0FF" />
                         </svg>
-                        <h1 class="font-bold sm:text-[20px] text-[16px] pt-[20px] pb-[10px]">AI Job Finder</h1>
+                        <h1 class="font-[700] sm:text-[20px] text-[16px] pt-[20px] pb-[10px]">AI Job Finder</h1>
                         <p class="sm:text-[16px] text-[14px]">Who scans & filters jobs/gigs for you that can be rendered using AI.</p>
                     </div>
                   
@@ -331,14 +331,14 @@
                         <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101" fill="none">
                             <rect x="0.756836" y="0.788574" width="100" height="100" fill="#FAF0FF" />
                         </svg>
-                        <h1 class="font-bold sm:text-[20px] text-[16px] pt-[20px] pb-[10px]">AI Tools</h1>
+                        <h1 class="font-[700] sm:text-[20px] text-[16px] pt-[20px] pb-[10px]">AI Tools</h1>
                         <p class="sm:text-[16px] text-[14px]">That can generate high-quality content quickly & efficiently.</p>
                     </div>
                     <div class="text-center sm:w-[250px] w-full">
                         <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101" fill="none">
                             <rect x="0.756836" y="0.788574" width="100" height="100" fill="#FAF0FF" />
                         </svg>
-                        <h1 class="font-bold sm:text-[20px] text-[16px] pt-[20px] pb-[10px]">AI Agency Consultant</h1>
+                        <h1 class="font-[700] sm:text-[20px] text-[16px] pt-[20px] pb-[10px]">AI Agency Consultant</h1>
                         <p class="sm:text-[16px] text-[14px]">Who knows about AI tools & platforms… and can help you set up an AI Agency.</p>
                     </div>
 
@@ -346,7 +346,7 @@
                         <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101" fill="none">
                             <rect x="0.756836" y="0.788574" width="100" height="100" fill="#FAF0FF" />
                         </svg>
-                        <h1 class="font-bold sm:text-[20px] text-[16px] pt-[20px] pb-[10px]">AI Job Finder</h1>
+                        <h1 class="font-[700] sm:text-[20px] text-[16px] pt-[20px] pb-[10px]">AI Job Finder</h1>
                         <p class="sm:text-[16px] text-[14px]">Who scans & filters jobs/gigs for you that can be rendered using AI.</p>
                     </div>
                   
@@ -354,7 +354,7 @@
                         <svg class="mx-auto" xmlns="http://www.w3.org/2000/svg" width="101" height="101" viewBox="0 0 101 101" fill="none">
                             <rect x="0.756836" y="0.788574" width="100" height="100" fill="#FAF0FF" />
                         </svg>
-                        <h1 class="font-bold sm:text-[20px] text-[16px] pt-[20px] pb-[10px]">AI Tools</h1>
+                        <h1 class="font-[700] sm:text-[20px] text-[16px] pt-[20px] pb-[10px]">AI Tools</h1>
                         <p class="sm:text-[16px] text-[14px]">That can generate high-quality content quickly & efficiently.</p>
                     </div>
                   
@@ -377,28 +377,39 @@ export default {
     data() {
         return {
             cardItems: [
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Designer', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
-                { title: 'Content Creator', icon: '/icons/inside_avatar.svg', expanded: false },
+            { title: 'CopyWriter', icon: '/images/dummy_avatars/Avatar.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-1.png', expanded: false },
+                { title: 'Web Developer', icon: '/images/dummy_avatars/Avatar-2.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-3.png', expanded: false },
+                { title: 'Sales Representative', icon: '/images/dummy_avatars/Avatar-4.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-5.png', expanded: false },
+                { title: 'Customer Assistant', icon: '/images/dummy_avatars/Avatar-6.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-7.png', expanded: false },
+                { title: 'Therapist', icon: '/images/dummy_avatars/Avatar-8.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-9.png', expanded: false },
+                { title: 'Graphic Designer', icon: '/images/dummy_avatars/Avatar-10.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-11.png', expanded: false },
+                { title: 'Animator', icon: '/images/dummy_avatars/Avatar-12.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-13.png', expanded: false },
+                { title: 'Product designer', icon: '/images/dummy_avatars/Avatar-14.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-15.png', expanded: false },
+                { title: 'Customer Support', icon: '/images/dummy_avatars/Avatar-16.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-17.png', expanded: false },
+                { title: 'Voice Artistr', icon: '/images/dummy_avatars/Avatar-18.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-19.png', expanded: false },
+                { title: 'Affiliate Marketer', icon: '/images/dummy_avatars/Avatar-20.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-21.png', expanded: false },
+                { title: 'Sales Representative', icon: '/images/dummy_avatars/Avatar-22.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-23.png', expanded: false },
+                { title: 'Teacher', icon: '/images/dummy_avatars/Avatar-24.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-25.png', expanded: false },
+                { title: 'Product Manager', icon: '/images/dummy_avatars/Avatar-26.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-27.png', expanded: false },
+                { title: 'Editor', icon: '/images/dummy_avatars/Avatar-28.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-29.png', expanded: false },
+                { title: 'Proofreader', icon: '/images/dummy_avatars/Avatar-30.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-31.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-32.png', expanded: false },
                 { title: 'Lots More', icon: '/icons/inside_lotsmore.svg', expanded: false },
             ]
         };
@@ -422,7 +433,7 @@ export default {
 }
 
 .title {
-    max-width: 100px;
+    max-width: 89px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -430,6 +441,7 @@ export default {
 
 .expanded-card {
     margin-left: 30px;
+    margin-right: 30px;
     transition: margin-left 0.3s ease-in-out;
 
 }</style>
