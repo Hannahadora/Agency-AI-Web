@@ -18,12 +18,12 @@
     <!-- <div>
         <img class="w-full cursor-pointer" src="/images/page_six.png" alt="page_frame">
     </div> -->
-    <div>
+    <!-- <div>
         <img class="w-full" src="/images/page_seven.png" alt="page_frame">
-    </div>
-    <div>
+    </div> -->
+    <!-- <div>
         <img class="w-full" src="/images/page_eight.png" alt="page_frame">
-    </div>
+    </div> -->
   </div>
 </template>
   

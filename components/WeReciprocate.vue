@@ -100,34 +100,84 @@ export default {
                 {
                     title: '7DDL',
                     amount: '$3,000+',
-                    icon: "/icons/landlord.svg",
+                    icon: "/icons/reciprocate_icons/image-18.svg",
                 },
                 {
                     title: 'MarketingBlocks',
                     amount: '$2,500+',
-                    icon: "/icons/marketing_blocks.svg",
+                    icon: "/icons/reciprocate_icons/image-18-1.svg",
                 },
                 {
-                    title: '7DDL',
+                    title: 'Hostley',
+                    amount: '$2,000+',
+                    icon: "/icons/reciprocate_icons/image-18-2.svg",
+                },
+                {
+                    title: 'VidProposal',
                     amount: '$3,000+',
-                    icon: "/icons/landlord.svg",
+                    icon: "/icons/reciprocate_icons/image-18-3.svg",
+                },
+                {
+                    title: 'Appimize',
+                    amount: '$3,000+',
+                    icon: "/icons/reciprocate_icons/image-18-4.svg",
+                },
+                {
+                    title: 'VirtualReel',
+                    amount: '50 SALES',
+                    icon: "/icons/reciprocate_icons/image-18-5.svg",
+                },
+                {
+                    title: 'EZdeals',
+                    amount: '$5,500+',
+                    icon: "/icons/reciprocate_icons/image-18-6.svg",
+                },
+                {
+                    title: 'VideoTik',
+                    amount: '$6,000+',
+                    icon: "/icons/reciprocate_icons/image-18-7.svg",
                 },
             ],
             ladderDataTwo: [
                 {
-                    title: '7DDL',
-                    amount: '$3,000+',
-                    icon: "/icons/landlord.svg",
-                },
-                {
-                    title: 'MarketingBlocks',
+                    title: 'QRVerse',
                     amount: '$2,500+',
-                    icon: "/icons/marketing_blocks.svg",
+                    icon: "/icons/reciprocate_icons/image-19.svg",
                 },
                 {
-                    title: '7DDL',
-                    amount: '$3,000+',
-                    icon: "/icons/landlord.svg",
+                    title: 'QuizTarget',
+                    amount: '$4,000+',
+                    icon: "/icons/reciprocate_icons/image-19-1.svg",
+                },
+                {
+                    title: 'VRAgency',
+                    amount: '$5,000+',
+                    icon: "/icons/reciprocate_icons/image-19-2.svg",
+                },
+                {
+                    title: 'DoodleMaker',
+                    amount: '$2,000+',
+                    icon: "/icons/reciprocate_icons/image-19-3.svg",
+                },
+                {
+                    title: 'ClickDesigns',
+                    amount: '80 SALES',
+                    icon: "/icons/reciprocate_icons/image-19-4.svg",
+                },
+                {
+                    title: 'CopyBlocks',
+                    amount: '$1,500+',
+                    icon: "/icons/reciprocate_icons/image-19-5.svg",
+                },
+                {
+                    title: 'LeadsGorilla',
+                    amount: '$2,000+',
+                    icon: "/icons/reciprocate_icons/image-19-6.svg",
+                },
+                {
+                    title: 'ADA Bundle',
+                    amount: '$10,000+',
+                    icon: "/icons/reciprocate_icons/image-19-7.svg",
                 },
             ]
         };

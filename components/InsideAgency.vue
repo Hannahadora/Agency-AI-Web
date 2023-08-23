@@ -100,7 +100,7 @@
                 <!-- break -->
                 <div class="flex flex-wrap gap-y-10 sm:overflow-x-auto overflow-x-hidden pt-[40px] pb-[60px]">
                     <div v-for="(item, index) in cardItems" :key="index"
-                        :class="['card', 'mx-auto', '-ml-[30px]', 'bg-white', { 'expanded-card': item.expanded }]">
+                        :class="['card', 'mx-auto', '-ml-[30px]', 'bg-white', 'h-[73px] w-[73px] rounded-[50%]', { 'expanded-card': item.expanded }]">
                         <img class="sm:h-[73px] h-[50px] sm:w-[73px] h-[50px] rounded-full border-2 cursor-pointer"
                             :src="item.icon" alt="" @click="toggleCardExpansion(index)" />
                         <h4 class="title font-medium overflow-ellipsis">{{ item.title }}</h4>
@@ -441,6 +441,7 @@ export default {
 
 .expanded-card {
     margin-left: 30px;
+    margin-right: 30px;
     transition: margin-left 0.3s ease-in-out;
 
 }</style>
