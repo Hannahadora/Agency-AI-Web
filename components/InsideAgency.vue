@@ -101,9 +101,9 @@
                 <div class="flex flex-wrap gap-y-10 sm:overflow-x-auto overflow-x-hidden pt-[40px] pb-[60px]">
                     <div v-for="(item, index) in cardItems" :key="index"
                         :class="['card', 'mx-auto', '-ml-[30px]', 'bg-white', { 'expanded-card': item.expanded }]">
-                        <img class="sm:h-[70px] h-[50px] sm:w-[70px] h-[50px] rounded-full border-2 cursor-pointer"
+                        <img class="sm:h-[73px] h-[50px] sm:w-[73px] h-[50px] rounded-full border-2 cursor-pointer"
                             :src="item.icon" alt="" @click="toggleCardExpansion(index)" />
-                        <h4 class="title font-medium">{{ item.title }}</h4>
+                        <h4 class="title font-medium overflow-ellipsis">{{ item.title }}</h4>
                     </div>
                 </div>
 
@@ -377,40 +377,40 @@ export default {
     data() {
         return {
             cardItems: [
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar.png', expanded: false },
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar-1.png', expanded: false },
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar-2.png', expanded: false },
-                { title: 'Designer', icon: '/images/dummy_avatars/Avatar-3.png', expanded: false },
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar-4.png', expanded: false },
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar-5.png', expanded: false },
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar-6.png', expanded: false },
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar-7.png', expanded: false },
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar-8.png', expanded: false },
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar-9.png', expanded: false },
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar-10.png', expanded: false },
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar-11.png', expanded: false },
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar-12.png', expanded: false },
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar-13.png', expanded: false },
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar-14.png', expanded: false },
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar-15.png', expanded: false },
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar-16.png', expanded: false },
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar-17.png', expanded: false },
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar-18.png', expanded: false },
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar-19.png', expanded: false },
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar-20.png', expanded: false },
-                { title: 'Content Creator', icon: '/images/dummy_avatars/Avatar-21.png', expanded: false },
-                { title: 'Developer', icon: '/images/dummy_avatars/Avatar-22.png', expanded: false },
-                { title: 'Developer', icon: '/images/dummy_avatars/Avatar-23.png', expanded: false },
-                { title: 'Developer', icon: '/images/dummy_avatars/Avatar-24.png', expanded: false },
-                { title: 'Developer', icon: '/images/dummy_avatars/Avatar-25.png', expanded: false },
-                { title: 'Developer', icon: '/images/dummy_avatars/Avatar-26.png', expanded: false },
-                { title: 'Developer', icon: '/images/dummy_avatars/Avatar-27.png', expanded: false },
-                { title: 'Developer', icon: '/images/dummy_avatars/Avatar-28.png', expanded: false },
-                { title: 'Developer', icon: '/images/dummy_avatars/Avatar-29.png', expanded: false },
-                { title: 'Developer', icon: '/images/dummy_avatars/Avatar-30.png', expanded: false },
-                { title: 'Developer', icon: '/images/dummy_avatars/Avatar-31.png', expanded: false },
-                { title: 'Developer', icon: '/images/dummy_avatars/Avatar-32.png', expanded: false },
-                { title: 'Lots More', icon: '/images/dummy_avatars/Avatar-32.png', expanded: false },
+            { title: 'CopyWriter', icon: '/images/dummy_avatars/Avatar.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-1.png', expanded: false },
+                { title: 'Web Developer', icon: '/images/dummy_avatars/Avatar-2.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-3.png', expanded: false },
+                { title: 'Sales Representative', icon: '/images/dummy_avatars/Avatar-4.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-5.png', expanded: false },
+                { title: 'Customer Assistant', icon: '/images/dummy_avatars/Avatar-6.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-7.png', expanded: false },
+                { title: 'Therapist', icon: '/images/dummy_avatars/Avatar-8.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-9.png', expanded: false },
+                { title: 'Graphic Designer', icon: '/images/dummy_avatars/Avatar-10.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-11.png', expanded: false },
+                { title: 'Animator', icon: '/images/dummy_avatars/Avatar-12.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-13.png', expanded: false },
+                { title: 'Product designer', icon: '/images/dummy_avatars/Avatar-14.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-15.png', expanded: false },
+                { title: 'Customer Support', icon: '/images/dummy_avatars/Avatar-16.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-17.png', expanded: false },
+                { title: 'Voice Artistr', icon: '/images/dummy_avatars/Avatar-18.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-19.png', expanded: false },
+                { title: 'Affiliate Marketer', icon: '/images/dummy_avatars/Avatar-20.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-21.png', expanded: false },
+                { title: 'Sales Representative', icon: '/images/dummy_avatars/Avatar-22.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-23.png', expanded: false },
+                { title: 'Teacher', icon: '/images/dummy_avatars/Avatar-24.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-25.png', expanded: false },
+                { title: 'Product Manager', icon: '/images/dummy_avatars/Avatar-26.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-27.png', expanded: false },
+                { title: 'Editor', icon: '/images/dummy_avatars/Avatar-28.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-29.png', expanded: false },
+                { title: 'Proofreader', icon: '/images/dummy_avatars/Avatar-30.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-31.png', expanded: false },
+                { title: '', icon: '/images/dummy_avatars/Avatar-32.png', expanded: false },
+                { title: 'Lots More', icon: '/icons/inside_lotsmore.svg', expanded: false },
             ]
         };
     },
@@ -433,7 +433,7 @@ export default {
 }
 
 .title {
-    max-width: 100px;
+    max-width: 89px;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
