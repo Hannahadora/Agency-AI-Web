@@ -5,7 +5,7 @@
               Our Products Converts
             </h1>
 
-            <div class="flex sm:flex-row flex-col sm:space-y-0 space-y-10 item-center justify-between sm:py-[100px] py-[50px]">
+            <div class="flex lg:flex-row flex-col sm:space-y-0 space-y-10 item-center justify-between sm:py-[100px] py-[50px]">
                 <div v-for="(item, index) in cardData" :key="index" class="bg-gradient-to-r from-[#333333] to-[#5D5D5E] sm:px-[45px] px-[30px] py-[35px] rounded-[20px]">
                    <div class="cursor-pointer mx-auto text-[24px] text-center bg-[#AB3ADD] text-white py-4 px-6">Launch Revenue</div>
                    <h1 class="text-[54px] text-white font-bold pt-[30px] pb-[50px]">{{ item.amount }}</h1>
