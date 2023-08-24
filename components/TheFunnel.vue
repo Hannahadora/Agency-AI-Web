@@ -23,7 +23,7 @@
         <h4 class="mb-[40px] font-[700] md:text-[40px] text-[30px] text-center">
           OTO 2
         </h4>
-        <SharedFunnelCard :bg-color="'#0A9851'" price="67" title="Pro" curveFill="#20C773" />
+        <SharedFunnelCard bgColor="#0A9851" price="67" title="Pro" curveFill="#20C773" />
       </div>
       <div class="flex flex-col items-center justify-center md:mt-[60px] mt-[40px]">
         <h4 class="mb-[40px] font-[700] md:text-[40px] text-[30px] text-center">
