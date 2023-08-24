@@ -1,7 +1,7 @@
 <template>
    <header
     :class="{ 'shadow-md bg-white': isScrolled }"
-    class="sticky relative top-0 w-full py-4 bg-transparent z-50 lg:px-[80px] px-[16px]"
+    class="z-[9999] sticky relative top-0 w-full py-4 bg-transparent z-50 lg:px-[80px] px-[16px]"
   >
     <div class="max-w-[1200px] mx-auto w-full flex items-center justify-between">
       <div>
