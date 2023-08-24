@@ -1,11 +1,11 @@
 <template>
-  <section class="relative bg-[#fff] w-full py-[127px]">
+  <section class="relative bg-[#fff] w-full sm:py-[127px] py-[50px]">
     <div class="absolute top-[0px] flex items-center justify-center">
       <img class="" src="/icons/merge_spring.svg" alt="icon" />
     </div>
     <div class="d-container">
       <div class="threesbg lg:p-[24px] md:p-[12px] p-[8px]">
-        <h3 class="text-center lg:text-[60px] md:text-[40px] text-[30px] font-[700]">
+        <h3 class="text-center lg:text-[60px] md:text-[40px] text-[24px] font-[700]">
           Now What If YOU Could Start<br class="md:block hidden" />
           An <span class="text-[#3B57F4]">AI Agency </span>In Any Niche<br class="md:block hidden" />
           YOU Want In
@@ -42,14 +42,15 @@
         </div>
       </div> -->
 
-      <div class="border border-red-500n flex">
-        <img class=" -mr-[80px]" src="/icons/what_snake.svg" alt="">
-        <div class="border-2 border-green-500">
-          <img src="/icons/what_one.svg" alt="">
-          <img class="mt-[100px] -ml-[180px]" src="/icons/what_two.svg" alt="">
-          <img class="mt-[100px]" src="/icons/what_three.svg" alt="">
-          <img class="mt-[160px] -ml-[180px]" src="/icons/what_four.svg" alt="">
-        </div>
+      <div class="pt-[120px] sm:block hidden">
+        <img class="mx-auto" src="/icons/whatifsteps.svg" alt="">
+      </div>
+
+      <div class="flex flex-col sm:hidden block pt-[40px]">
+        <img src="/icons/what_one.svg" alt="">
+        <img src="/icons/what_two.svg" alt="">
+        <img src="/icons/what_three.svg" alt="">
+        <img src="/icons/what_four.svg" alt="">
       </div>
     </div>
   </section>
