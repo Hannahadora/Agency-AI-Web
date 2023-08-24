@@ -5,7 +5,7 @@
     <div class="flex flex-col items-center justify-center">
         <SvgFunnelDiamond :diamondFill="bgColor" />
         <h5 class="md:text-[34px] text-[24px] font-[700] md:mt-[32px] mt-[24px] text-[#fff]">AgencyAI</h5>
-        <div class="bg-[#fff] text-center py-[22px] px-[39px] md:mt-[57px] mt-[30px]">
+        <div class="bg-[#fff] text-center py-[22px] px-[39px] md:mt-[57px] mt-[30px] max-w-[300px]">
             <p :class="`text-[${bgColor}] md:text-[24px] text-[20px] font-[600] uppercase`">{{title}}</p>
         </div>
         <p class="md:mt-[38px] mt-[30px] font-[600] text-[60px] text-[#fff] text-center">${{ price }}</p>
@@ -23,7 +23,7 @@ defineProps({
     },
     bgColor: {
         type: String,
-        default: '#000'
+        default: ''
     },
     title: {
         type: String,
