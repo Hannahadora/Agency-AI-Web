@@ -5,18 +5,14 @@
     </div>
     <div class="d-container">
       <div class="threesbg lg:p-[24px] md:p-[12px] p-[8px]">
-        <h3
-          class="text-center lg:text-[60px] md:text-[40px] text-[30px] font-[700]"
-        >
+        <h3 class="text-center lg:text-[60px] md:text-[40px] text-[30px] font-[700]">
           Now What If YOU Could Start<br class="md:block hidden" />
-          An <span class="text-[#3B57F4]">AI Agency </span>In Any Niche<br
-            class="md:block hidden"
-          />
+          An <span class="text-[#3B57F4]">AI Agency </span>In Any Niche<br class="md:block hidden" />
           YOU Want In
           <span class="text-[#3B57F4]">SECONDS?</span>
         </h3>
       </div>
-      <div class="relative mt-[80px]">
+      <!-- <div class="relative mt-[80px]">
         <img class="absolute left-[80px] top-[25px]" src="/icons/chain-ring.svg" alt="illustration">
         <div class="flex flex-col items-center justify-center">
           <SharedBlueLongCard icon="/icons/solid-sun.svg" class="mb-[76px]">
@@ -43,6 +39,16 @@
                 What If YOU could <b>get a complete system that helps you land these clients</b> & even manage them like a PRO?
             </p>
           </SharedBlueLongCard>
+        </div>
+      </div> -->
+
+      <div class="border border-red-500n flex">
+        <img class=" -mr-[80px]" src="/icons/what_snake.svg" alt="">
+        <div class="border-2 border-green-500">
+          <img src="/icons/what_one.svg" alt="">
+          <img class="mt-[100px] -ml-[180px]" src="/icons/what_two.svg" alt="">
+          <img class="mt-[100px]" src="/icons/what_three.svg" alt="">
+          <img class="mt-[160px] -ml-[180px]" src="/icons/what_four.svg" alt="">
         </div>
       </div>
     </div>
